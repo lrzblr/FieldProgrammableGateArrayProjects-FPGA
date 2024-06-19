@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lrzbl/Desktop/FPGA-FinalProje/MouseBaseCodes/etonw/ps2_tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ps2_tx
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lrzbl/Desktop/FPGA-FinalProje/MouseBaseCodes/etonw/ps2_rx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ps2_rx
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lrzbl/Desktop/FPGA-FinalProje/MouseBaseCodes/etonw/ps2_rxtx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ps2_rxtx
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lrzbl/Desktop/FPGA-FinalProje/MouseBaseCodes/etonw/mouse.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mouse
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lrzbl/Desktop/FPGA-FinalProje/MouseBaseCodes/etonw/mouse_led.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mouse_led
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lrzbl/Desktop/FPGA-FinalProje/ps2-control-led/ps2-control-led.srcs/sim_1/new/mouse_led_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_mouse_led

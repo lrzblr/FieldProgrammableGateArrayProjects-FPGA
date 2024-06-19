@@ -1,0 +1,32 @@
+14:48:44 **** Auto Build of configuration Debug for project vanilla_test ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../vanilla_test_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:39:1: error: stray '\240' in program
+     return 0;
+ ^
+../src/main.cc:39:2: error: stray '\240' in program
+     return 0;
+  ^
+../src/main.cc:39:3: error: stray '\240' in program
+     return 0;
+   ^
+../src/main.cc:39:4: error: stray '\240' in program
+     return 0;
+    ^
+../src/main.cc:39:11: error: stray '\240' in program
+     return 0;
+           ^
+../src/main.cc: In function 'void gpio_init()':
+../src/main.cc:12:30: error: 'XPAR_AXI_GPIO_0_DEVICE_ID' was not declared in this scope
+  gpio_c = XGpio_LookupConfig(XPAR_AXI_GPIO_0_DEVICE_ID);
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc: In function 'int main()':
+../src/main.cc:31:13: error: 'sleep' was not declared in this scope
+      sleep(1);
+             ^
+make: *** [src/main.o] Hata 1
+
+14:48:44 Build Finished (took 292ms)
+

@@ -1,0 +1,1 @@
+-wto "a02ea24dbd56440ab71f70ea4dd6ec1d" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_angle2pulse_behav" "xil_defaultlib.tb_angle2pulse" -log "elaborate.log" 

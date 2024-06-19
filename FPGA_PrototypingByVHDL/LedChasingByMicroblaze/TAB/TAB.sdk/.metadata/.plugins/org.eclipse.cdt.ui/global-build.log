@@ -1,0 +1,506 @@
+14:30:26 **** Build of project TAB_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_3/src"
+make -C microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_3/src"
+make -C microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+inbyte.c: In function 'inbyte':
+inbyte.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+outbyte.c: In function 'outbyte':
+outbyte.c:11:19: warning: unused parameter 'c' [-Wunused-parameter]
+ void outbyte(char c) {
+                   ^
+'Finished building libraries'
+14:30:31 **** Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: TAB.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../TAB_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "TAB.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: TAB.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TAB.elf  |tee "TAB.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1988	    268	   3112	   5368	   14f8	TAB.elf
+'Finished building: TAB.elf.size'
+' '
+14:31:54 **** Auto Build of configuration Debug for project TAB ****
+make all 
+make: `all' için hiçbir þey yapýlmadý.
+14:32:06 **** Auto Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/maim.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/maim.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/maim.d" -MT"src/maim.o" -o "src/maim.o" "../src/maim.cpp"
+'Finished building: ../src/maim.cpp'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building target: TAB.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../TAB_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "TAB.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/maim.o ./src/main.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `led_check(GpoCore*, int)':
+C:\Users\lrzbl\Desktop\fpga2.odev\TAB\TAB.sdk\TAB\Debug/../src/main.cc:33: multiple definition of `led_check(GpoCore*, int)'
+./src/maim.o:C:\Users\lrzbl\Desktop\fpga2.odev\TAB\TAB.sdk\TAB\Debug/../src/maim.cpp:33: first defined here
+./src/main.o: In function `led_check(GpoCore*, int)':
+C:\Users\lrzbl\Desktop\fpga2.odev\TAB\TAB.sdk\TAB\Debug/../src/main.cc:33: multiple definition of `led_return_check(GpoCore*, int)'
+./src/maim.o:C:\Users\lrzbl\Desktop\fpga2.odev\TAB\TAB.sdk\TAB\Debug/../src/maim.cpp:33: first defined here
+./src/main.o: In function `led_check(GpoCore*, int)':
+C:\Users\lrzbl\Desktop\fpga2.odev\TAB\TAB.sdk\TAB\Debug/../src/main.cc:33: multiple definition of `led'
+./src/maim.o:C:\Users\lrzbl\Desktop\fpga2.odev\TAB\TAB.sdk\TAB\Debug/../src/maim.cpp:33: first defined here
+./src/main.o: In function `led_check(GpoCore*, int)':
+C:\Users\lrzbl\Desktop\fpga2.odev\TAB\TAB.sdk\TAB\Debug/../src/main.cc:33: multiple definition of `sw'
+./src/maim.o:C:\Users\lrzbl\Desktop\fpga2.odev\TAB\TAB.sdk\TAB\Debug/../src/maim.cpp:33: first defined here
+./src/main.o: In function `led_check(GpoCore*, int)':
+C:\Users\lrzbl\Desktop\fpga2.odev\TAB\TAB.sdk\TAB\Debug/../src/main.cc:33: multiple definition of `main'
+./src/maim.o:C:\Users\lrzbl\Desktop\fpga2.odev\TAB\TAB.sdk\TAB\Debug/../src/maim.cpp:33: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [TAB.elf] Hata 1
+14:32:18 **** Clean-only build of configuration Debug for project TAB ****
+make clean 
+rm -rf  ./src/main.d  ./src/chu_init.o ./src/gpio_cores.o ./src/maim.o ./src/main.o ./src/timer_core.o ./src/uart_core.o  ./src/chu_init.d ./src/gpio_cores.d ./src/maim.d ./src/timer_core.d ./src/uart_core.d  TAB.elf.size  TAB.elf
+' '
+14:32:18 **** Auto Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building target: TAB.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../TAB_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "TAB.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: TAB.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TAB.elf  |tee "TAB.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9148	    284	   3144	  12576	   3120	TAB.elf
+'Finished building: TAB.elf.size'
+' '
+14:39:10 **** Auto Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:2:22: fatal error: platform.h: No such file or directory
+ #include "platform.h"
+                      ^
+compilation terminated.
+make: *** [src/main.o] Hata 1
+14:40:26 **** Auto Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:2:0:
+../src/platform.h:36:29: fatal error: platform_config.h: No such file or directory
+ #include "platform_config.h"
+                             ^
+compilation terminated.
+make: *** [src/main.o] Hata 1
+14:40:48 **** Auto Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:39:1: error: stray '\240' in program
+     return 0;
+ ^
+../src/main.cc:39:2: error: stray '\240' in program
+     return 0;
+  ^
+../src/main.cc:39:3: error: stray '\240' in program
+     return 0;
+   ^
+../src/main.cc:39:4: error: stray '\240' in program
+     return 0;
+    ^
+../src/main.cc:39:11: error: stray '\240' in program
+     return 0;
+           ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:31:13: error: 'sleep' was not declared in this scope
+      sleep(1);
+             ^
+make: *** [src/main.o] Hata 1
+14:41:09 **** Auto Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:31:13: error: 'sleep' was not declared in this scope
+      sleep(1);
+             ^
+make: *** [src/main.o] Hata 1
+14:41:15 **** Auto Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:32:13: error: 'sleep' was not declared in this scope
+      sleep(1);
+             ^
+make: *** [src/main.o] Hata 1
+14:41:20 **** Auto Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: TAB.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../TAB_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "TAB.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/platform.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: TAB.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TAB.elf  |tee "TAB.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6652	    300	   3160	  10112	   2780	TAB.elf
+'Finished building: TAB.elf.size'
+' '
+14:42:41 **** Clean-only build of configuration Debug for project vanilla_test ****
+make clean 
+rm -rf  ./src/main.d  ./src/gpio_cores.o ./src/main.o  ./src/gpio_cores.d  vanilla_test.elf.size  vanilla_test.elf
+' '
+14:42:42 **** Build of configuration Debug for project vanilla_test ****
+make all 
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../vanilla_test_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+In file included from ../src/gpio_cores.cpp:10:0:
+../src/gpio_cores.h:15:22: fatal error: chu_init.h: No such file or directory
+ #include "chu_init.h"
+                      ^
+compilation terminated.
+make: *** [src/gpio_cores.o] Hata 1
+14:43:33 **** Auto Build of configuration Debug for project vanilla_test ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../vanilla_test_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../vanilla_test_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../vanilla_test_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: vanilla_test.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../vanilla_test_bsp/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "vanilla_test.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/chu_init.o: In function `__static_initialization_and_destruction_0(int, int)':
+C:\Users\lrzbl\Desktop\FPGA5HAFTA\vanilla_test\Debug/../src/chu_init.cpp:24: undefined reference to `TimerCore::TimerCore(unsigned long)'
+C:\Users\lrzbl\Desktop\FPGA5HAFTA\vanilla_test\Debug/../src/chu_init.cpp:25: undefined reference to `UartCore::UartCore(unsigned long)'
+C:\Users\lrzbl\Desktop\FPGA5HAFTA\vanilla_test\Debug/../src/chu_init.cpp:25: undefined reference to `UartCore::~UartCore()'
+C:\Users\lrzbl\Desktop\FPGA5HAFTA\vanilla_test\Debug/../src/chu_init.cpp:24: undefined reference to `TimerCore::~TimerCore()'
+collect2.exe: error: ld returned 1 exit status
+make: *** [vanilla_test.elf] Hata 1
+14:43:46 **** Clean-only build of configuration Debug for project vanilla_test ****
+make clean 
+rm -rf  ./src/main.d  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o  ./src/chu_init.d ./src/gpio_cores.d  vanilla_test.elf.size  vanilla_test.elf
+' '
+14:43:46 **** Auto Build of configuration Debug for project vanilla_test ****
+make all 
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../vanilla_test_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../vanilla_test_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: vanilla_test.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../vanilla_test_bsp/microblaze_I/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "vanilla_test.elf"  ./src/gpio_cores.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: vanilla_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size vanilla_test.elf  |tee "vanilla_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1988	    268	   3112	   5368	   14f8	vanilla_test.elf
+'Finished building: vanilla_test.elf.size'
+' '
+14:45:25 **** Auto Build of configuration Debug for project vanilla_test ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../vanilla_test_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:2:22: fatal error: platform.h: No such file or directory
+ #include "platform.h"
+                      ^
+compilation terminated.
+make: *** [src/main.o] Hata 1
+14:46:39 **** Auto Build of configuration Debug for project vanilla_test ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../vanilla_test_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:2:0:
+../src/platform.h:36:29: fatal error: platform_config.h: No such file or directory
+ #include "platform_config.h"
+                             ^
+compilation terminated.
+make: *** [src/main.o] Hata 1
+14:47:33 **** Auto Build of configuration Debug for project vanilla_test ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../vanilla_test_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:2:0:
+../src/platform.h:36:29: fatal error: platform_config.h: No such file or directory
+ #include "platform_config.h"
+                             ^
+compilation terminated.
+make: *** [src/main.o] Hata 1
+14:47:57 **** Auto Build of configuration Debug for project vanilla_test ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../vanilla_test_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:4:0:
+../src/xgpio.h:136:21: fatal error: xgpio_l.h: No such file or directory
+ #include "xgpio_l.h"
+                     ^
+compilation terminated.
+make: *** [src/main.o] Hata 1
+14:48:44 **** Auto Build of configuration Debug for project vanilla_test ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../vanilla_test_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:39:1: error: stray '\240' in program
+     return 0;
+ ^
+../src/main.cc:39:2: error: stray '\240' in program
+     return 0;
+  ^
+../src/main.cc:39:3: error: stray '\240' in program
+     return 0;
+   ^
+../src/main.cc:39:4: error: stray '\240' in program
+     return 0;
+    ^
+../src/main.cc:39:11: error: stray '\240' in program
+     return 0;
+           ^
+../src/main.cc: In function 'void gpio_init()':
+../src/main.cc:12:30: error: 'XPAR_AXI_GPIO_0_DEVICE_ID' was not declared in this scope
+  gpio_c = XGpio_LookupConfig(XPAR_AXI_GPIO_0_DEVICE_ID);
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc: In function 'int main()':
+../src/main.cc:31:13: error: 'sleep' was not declared in this scope
+      sleep(1);
+             ^
+make: *** [src/main.o] Hata 1
+17:38:51 **** Clean-only build of configuration Debug for project TAB ****
+make clean 
+rm -rf  ./src/main.d  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/platform.o ./src/timer_core.o ./src/uart_core.o  ./src/platform.d  ./src/chu_init.d ./src/gpio_cores.d ./src/timer_core.d ./src/uart_core.d  TAB.elf.size  TAB.elf
+' '
+17:38:52 **** Auto Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/chu_init.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+'Finished building: ../src/chu_init.cpp'
+' '
+'Building file: ../src/gpio_cores.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+'Finished building: ../src/gpio_cores.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/timer_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+'Finished building: ../src/timer_core.cpp'
+' '
+'Building file: ../src/uart_core.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+'Finished building: ../src/uart_core.cpp'
+' '
+'Building target: TAB.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../TAB_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "TAB.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/platform.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: TAB.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TAB.elf  |tee "TAB.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9148	    284	   3144	  12576	   3120	TAB.elf
+'Finished building: TAB.elf.size'
+' '
+17:41:44 **** Auto Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:51:18: error: 'led' was not declared in this scope
+       led_check(&led, 16);
+                  ^~~
+make: *** [src/main.o] Hata 1
+17:42:55 **** Auto Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: TAB.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../TAB_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "TAB.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/platform.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: TAB.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TAB.elf  |tee "TAB.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9148	    284	   3144	  12576	   3120	TAB.elf
+'Finished building: TAB.elf.size'
+' '
+17:43:09 **** Auto Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: TAB.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../TAB_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "TAB.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/platform.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: TAB.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TAB.elf  |tee "TAB.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9148	    284	   3144	  12576	   3120	TAB.elf
+'Finished building: TAB.elf.size'
+' '
+17:43:16 **** Auto Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: TAB.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../TAB_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "TAB.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/platform.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: TAB.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TAB.elf  |tee "TAB.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9148	    284	   3144	  12576	   3120	TAB.elf
+'Finished building: TAB.elf.size'
+' '
+17:43:28 **** Auto Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: TAB.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../TAB_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "TAB.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/platform.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: TAB.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TAB.elf  |tee "TAB.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9148	    284	   3144	  12576	   3120	TAB.elf
+'Finished building: TAB.elf.size'
+' '

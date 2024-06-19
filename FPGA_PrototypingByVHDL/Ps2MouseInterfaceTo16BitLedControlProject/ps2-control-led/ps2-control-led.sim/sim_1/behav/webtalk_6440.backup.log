@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Jun  5 01:27:41 2024
+# Process ID: 6440
+# Current directory: C:/Users/lrzbl/Desktop/FPGA-FinalProje/ps2-control-led/ps2-control-led.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/lrzbl/Desktop/FPGA-FinalProje/ps2-control-led/ps2-control-led.sim/sim_1/behav/xsim.dir/tb_mouse_led_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/lrzbl/Desktop/FPGA-FinalProje/ps2-control-led/ps2-control-led.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/lrzbl/Desktop/FPGA-FinalProje/ps2-control-led/ps2-control-led.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/lrzbl/Desktop/FPGA-FinalProje/ps2-control-led/ps2-control-led.sim/sim_1/behav/xsim.dir/tb_mouse_led_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 61.527 ; gain = 0.184
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun  5 01:27:49 2024...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Jun  5 10:37:57 2024
+# Process ID: 15944
+# Current directory: C:/Users/lrzbl/Desktop/FPGA-FinalProje/ps2-control-led/ps2-control-led.runs/synth_1
+# Command line: vivado.exe -log mouse_led.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mouse_led.tcl
+# Log file: C:/Users/lrzbl/Desktop/FPGA-FinalProje/ps2-control-led/ps2-control-led.runs/synth_1/mouse_led.vds
+# Journal file: C:/Users/lrzbl/Desktop/FPGA-FinalProje/ps2-control-led/ps2-control-led.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mouse_led.tcl -notrace

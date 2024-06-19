@@ -1,0 +1,10 @@
+0.6
+2017.2
+Jun 15 2017
+18:52:51
+C:/Users/lrzbl/Desktop/FPGA-FinalProje/MouseBaseCodes/etonw/mouse.vhd,1717178979,vhdl,C:/Users/lrzbl/Desktop/FPGA-FinalProje/MouseBaseCodes/etonw/mouse_led.vhd,,,mouse,,,,,,,,
+C:/Users/lrzbl/Desktop/FPGA-FinalProje/MouseBaseCodes/etonw/mouse_led.vhd,1717539170,vhdl,,,,mouse_led,,,,,,,,
+C:/Users/lrzbl/Desktop/FPGA-FinalProje/MouseBaseCodes/etonw/ps2_rx.vhd,1717178988,vhdl,C:/Users/lrzbl/Desktop/FPGA-FinalProje/MouseBaseCodes/etonw/ps2_rxtx.vhd,,,ps2_rx,,,,,,,,
+C:/Users/lrzbl/Desktop/FPGA-FinalProje/MouseBaseCodes/etonw/ps2_rxtx.vhd,1717178971,vhdl,C:/Users/lrzbl/Desktop/FPGA-FinalProje/MouseBaseCodes/etonw/mouse.vhd,,,ps2_rxtx,,,,,,,,
+C:/Users/lrzbl/Desktop/FPGA-FinalProje/MouseBaseCodes/etonw/ps2_tx.vhd,1717178965,vhdl,C:/Users/lrzbl/Desktop/FPGA-FinalProje/MouseBaseCodes/etonw/ps2_rxtx.vhd,,,ps2_tx,,,,,,,,
+C:/Users/lrzbl/Desktop/FPGA-FinalProje/ps2-control-led/ps2-control-led.srcs/sim_1/new/mouse_led_tb.vhd,1717540054,vhdl,,,,tb_mouse_led,,,,,,,,

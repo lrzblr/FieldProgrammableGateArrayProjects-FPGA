@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../MouseBaseCodes/etonw/ps2_tx.vhd"
+vhdl xil_defaultlib  "../../../../MouseBaseCodes/etonw/ps2_rx.vhd"
+vhdl xil_defaultlib  "../../../../MouseBaseCodes/etonw/ps2_rxtx.vhd"
+vhdl xil_defaultlib  "../../../../MouseBaseCodes/etonw/mouse.vhd"
+vhdl xil_defaultlib  "../../../../MouseBaseCodes/etonw/mouse_led.vhd"
+vhdl xil_defaultlib  "../../../ps2-control-led.srcs/sim_1/new/mouse_led_tb.vhd"
+
+# Do not sort compile order
+nosort

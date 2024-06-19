@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lrzbl/Downloads/FPGA-Servo-control-main/FPGA-Servo-control-main/src/angle2pulse.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity angle2pulse
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lrzbl/Downloads/FPGA-Servo-control-main/FPGA-Servo-control-main/sim/tb_angle2pulse.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_angle2pulse

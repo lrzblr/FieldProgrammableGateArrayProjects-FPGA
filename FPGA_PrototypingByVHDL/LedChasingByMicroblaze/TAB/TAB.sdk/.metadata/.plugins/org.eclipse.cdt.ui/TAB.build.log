@@ -1,0 +1,21 @@
+17:43:28 **** Auto Build of configuration Debug for project TAB ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../TAB_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: TAB.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../TAB_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "TAB.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main.o ./src/platform.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: TAB.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TAB.elf  |tee "TAB.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9148	    284	   3144	  12576	   3120	TAB.elf
+'Finished building: TAB.elf.size'
+' '
+
+17:43:29 Build Finished (took 742ms)
+

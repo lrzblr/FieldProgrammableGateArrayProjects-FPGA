@@ -1,0 +1,389 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Apr 30 14:26:25 2024
+# Process ID: 9000
+# Current directory: C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1
+# Command line: vivado.exe -log TAB_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TAB_wrapper.tcl
+# Log file: C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/TAB_wrapper.vds
+# Journal file: C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TAB_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.2/data/ip'.
+Command: synth_design -top TAB_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17568 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 417.984 ; gain = 75.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TAB_wrapper' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB_wrapper.vhd:22]
+INFO: [Synth 8-3491] module 'TAB' declared at 'C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:1884' bound to instance 'TAB_i' of component 'TAB' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB_wrapper.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'TAB' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:1896]
+INFO: [Synth 8-3491] module 'TAB_axi_gpio_0_0' declared at 'C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'TAB_axi_gpio_0_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:2237]
+INFO: [Synth 8-638] synthesizing module 'TAB_axi_gpio_0_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_axi_gpio_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'TAB_clk_wiz_1_0' declared at 'C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'TAB_clk_wiz_1_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:2260]
+INFO: [Synth 8-638] synthesizing module 'TAB_clk_wiz_1_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_clk_wiz_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'TAB_mdm_1_0' declared at 'C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'TAB_mdm_1_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:2267]
+INFO: [Synth 8-638] synthesizing module 'TAB_mdm_1_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'TAB_microblaze_0_0' declared at 'C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'TAB_microblaze_0_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:2280]
+INFO: [Synth 8-638] synthesizing module 'TAB_microblaze_0_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_microblaze_0_0_stub.vhdl:137]
+INFO: [Synth 8-638] synthesizing module 'TAB_microblaze_0_axi_periph_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:1320]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1KQPH16' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1KQPH16' (1#1) [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:57]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_S6JVB4' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:714]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_S6JVB4' (2#1) [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:714]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_1F274XX' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:839]
+INFO: [Synth 8-3491] module 'TAB_auto_pc_0' declared at 'C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'TAB_auto_pc_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:1009]
+INFO: [Synth 8-638] synthesizing module 'TAB_auto_pc_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_auto_pc_0_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_1F274XX' (3#1) [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:839]
+INFO: [Synth 8-638] synthesizing module 's02_couplers_imp_1LYJ2J' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:1105]
+INFO: [Synth 8-3491] module 'TAB_auto_pc_1' declared at 'C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'TAB_auto_pc_1' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:1187]
+INFO: [Synth 8-638] synthesizing module 'TAB_auto_pc_1' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_auto_pc_1_stub.vhdl:37]
+INFO: [Synth 8-256] done synthesizing module 's02_couplers_imp_1LYJ2J' (4#1) [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:1105]
+INFO: [Synth 8-3491] module 'TAB_xbar_0' declared at 'C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'TAB_xbar_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:1798]
+INFO: [Synth 8-638] synthesizing module 'TAB_xbar_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'TAB_microblaze_0_axi_periph_0' (5#1) [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:1320]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_A5CZKO' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:141]
+INFO: [Synth 8-3491] module 'TAB_dlmb_bram_if_cntlr_0' declared at 'C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'TAB_dlmb_bram_if_cntlr_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:351]
+INFO: [Synth 8-638] synthesizing module 'TAB_dlmb_bram_if_cntlr_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'TAB_dlmb_v10_0' declared at 'C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'TAB_dlmb_v10_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:405]
+INFO: [Synth 8-638] synthesizing module 'TAB_dlmb_v10_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'TAB_ilmb_bram_if_cntlr_0' declared at 'C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'TAB_ilmb_bram_if_cntlr_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:433]
+INFO: [Synth 8-638] synthesizing module 'TAB_ilmb_bram_if_cntlr_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'TAB_ilmb_v10_0' declared at 'C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'TAB_ilmb_v10_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:487]
+INFO: [Synth 8-638] synthesizing module 'TAB_ilmb_v10_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'TAB_lmb_bram_0' declared at 'C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'TAB_lmb_bram_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:515]
+INFO: [Synth 8-638] synthesizing module 'TAB_lmb_bram_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_lmb_bram_0_stub.vhdl:25]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_A5CZKO' (6#1) [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:141]
+INFO: [Synth 8-3491] module 'TAB_rst_clk_wiz_1_100M_0' declared at 'C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'TAB_rst_clk_wiz_1_100M_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:2530]
+INFO: [Synth 8-638] synthesizing module 'TAB_rst_clk_wiz_1_100M_0' [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/realtime/TAB_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'TAB' (7#1) [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB.vhd:1896]
+INFO: [Synth 8-256] done synthesizing module 'TAB_wrapper' (8#1) [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.srcs/sources_1/bd/TAB/hdl/TAB_wrapper.vhd:22]
+WARNING: [Synth 8-3331] design s02_couplers_imp_1LYJ2J has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s02_couplers_imp_1LYJ2J has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s01_couplers_imp_1F274XX has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_1F274XX has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_S6JVB4 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_S6JVB4 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_S6JVB4 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_S6JVB4 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1KQPH16 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1KQPH16 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1KQPH16 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1KQPH16 has unconnected port S_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 459.320 ; gain = 116.402
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 459.320 ; gain = 116.402
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp27/TAB_microblaze_0_0_in_context.xdc] for cell 'TAB_i/microblaze_0'
+Finished Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp27/TAB_microblaze_0_0_in_context.xdc] for cell 'TAB_i/microblaze_0'
+Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp29/TAB_mdm_1_0_in_context.xdc] for cell 'TAB_i/mdm_1'
+Finished Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp29/TAB_mdm_1_0_in_context.xdc] for cell 'TAB_i/mdm_1'
+Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp31/TAB_clk_wiz_1_0_in_context.xdc] for cell 'TAB_i/clk_wiz_1'
+Finished Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp31/TAB_clk_wiz_1_0_in_context.xdc] for cell 'TAB_i/clk_wiz_1'
+Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp33/TAB_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'TAB_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp33/TAB_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'TAB_i/rst_clk_wiz_1_100M'
+Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp35/TAB_axi_gpio_0_0_in_context.xdc] for cell 'TAB_i/axi_gpio_0'
+Finished Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp35/TAB_axi_gpio_0_0_in_context.xdc] for cell 'TAB_i/axi_gpio_0'
+Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp37/TAB_xbar_0_in_context.xdc] for cell 'TAB_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp37/TAB_xbar_0_in_context.xdc] for cell 'TAB_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp39/TAB_auto_pc_1_in_context.xdc] for cell 'TAB_i/microblaze_0_axi_periph/s02_couplers/auto_pc'
+Finished Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp39/TAB_auto_pc_1_in_context.xdc] for cell 'TAB_i/microblaze_0_axi_periph/s02_couplers/auto_pc'
+Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp41/TAB_auto_pc_0_in_context.xdc] for cell 'TAB_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
+Finished Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp41/TAB_auto_pc_0_in_context.xdc] for cell 'TAB_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
+Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp43/TAB_dlmb_v10_0_in_context.xdc] for cell 'TAB_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp43/TAB_dlmb_v10_0_in_context.xdc] for cell 'TAB_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp45/TAB_ilmb_v10_0_in_context.xdc] for cell 'TAB_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp45/TAB_ilmb_v10_0_in_context.xdc] for cell 'TAB_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp47/TAB_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'TAB_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp47/TAB_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'TAB_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp49/TAB_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'TAB_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp49/TAB_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'TAB_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp51/TAB_lmb_bram_0_in_context.xdc] for cell 'TAB_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp51/TAB_lmb_bram_0_in_context.xdc] for cell 'TAB_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [C:/Users/lrzbl/Desktop/FPGA5HAFTA/Chu Codes/constraint/Nexys4_DDR_chu.xdc]
+Finished Parsing XDC File [C:/Users/lrzbl/Desktop/FPGA5HAFTA/Chu Codes/constraint/Nexys4_DDR_chu.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lrzbl/Desktop/FPGA5HAFTA/Chu Codes/constraint/Nexys4_DDR_chu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TAB_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TAB_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 726.586 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'TAB_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 726.586 ; gain = 383.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 726.586 ; gain = 383.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp31/TAB_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/.Xil/Vivado-9000-DESKTOP-8K477JS/dcp31/TAB_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for TAB_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TAB_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TAB_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TAB_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TAB_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TAB_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TAB_i/microblaze_0_axi_periph/s01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TAB_i/microblaze_0_axi_periph/s02_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TAB_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TAB_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TAB_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TAB_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TAB_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TAB_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for TAB_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 726.586 ; gain = 383.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 726.586 ; gain = 383.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design TAB_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design TAB_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design TAB_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design TAB_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 726.586 ; gain = 383.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'TAB_i/mdm_1/Dbg_Clk_0' to pin 'TAB_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'TAB_i/mdm_1/Dbg_Update_0' to pin 'TAB_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'TAB_i/clk_wiz_1/clk_out1' to pin 'TAB_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'TAB_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'TAB_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'TAB_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'TAB_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 726.586 ; gain = 383.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 726.586 ; gain = 383.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 726.586 ; gain = 383.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 726.586 ; gain = 383.668
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 726.586 ; gain = 383.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 726.586 ; gain = 383.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 726.586 ; gain = 383.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 726.586 ; gain = 383.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 726.586 ; gain = 383.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------+----------+
+|      |BlackBox name            |Instances |
++------+-------------------------+----------+
+|1     |TAB_xbar_0               |         1|
+|2     |TAB_auto_pc_0            |         1|
+|3     |TAB_auto_pc_1            |         1|
+|4     |TAB_axi_gpio_0_0         |         1|
+|5     |TAB_clk_wiz_1_0          |         1|
+|6     |TAB_mdm_1_0              |         1|
+|7     |TAB_microblaze_0_0       |         1|
+|8     |TAB_rst_clk_wiz_1_100M_0 |         1|
+|9     |TAB_dlmb_bram_if_cntlr_0 |         1|
+|10    |TAB_dlmb_v10_0           |         1|
+|11    |TAB_ilmb_bram_if_cntlr_0 |         1|
+|12    |TAB_ilmb_v10_0           |         1|
+|13    |TAB_lmb_bram_0           |         1|
++------+-------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------+------+
+|      |Cell                          |Count |
++------+------------------------------+------+
+|1     |TAB_auto_pc_0_bbox            |     1|
+|2     |TAB_auto_pc_1_bbox            |     1|
+|3     |TAB_axi_gpio_0_0_bbox         |     1|
+|4     |TAB_clk_wiz_1_0_bbox          |     1|
+|5     |TAB_dlmb_bram_if_cntlr_0_bbox |     1|
+|6     |TAB_dlmb_v10_0_bbox           |     1|
+|7     |TAB_ilmb_bram_if_cntlr_0_bbox |     1|
+|8     |TAB_ilmb_v10_0_bbox           |     1|
+|9     |TAB_lmb_bram_0_bbox           |     1|
+|10    |TAB_mdm_1_0_bbox              |     1|
+|11    |TAB_microblaze_0_0_bbox       |     1|
+|12    |TAB_rst_clk_wiz_1_100M_0_bbox |     1|
+|13    |TAB_xbar_0_bbox               |     1|
+|14    |IBUF                          |     1|
+|15    |OBUF                          |    16|
++------+------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+-------------------------------------+------+
+|      |Instance                      |Module                               |Cells |
++------+------------------------------+-------------------------------------+------+
+|1     |top                           |                                     |  1587|
+|2     |  TAB_i                       |TAB                                  |  1570|
+|3     |    microblaze_0_axi_periph   |TAB_microblaze_0_axi_periph_0        |   461|
+|4     |      s01_couplers            |s01_couplers_imp_1F274XX             |   153|
+|5     |      s02_couplers            |s02_couplers_imp_1LYJ2J              |    74|
+|6     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_A5CZKO |   494|
++------+------------------------------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 726.586 ; gain = 383.668
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 726.586 ; gain = 116.402
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 726.586 ; gain = 383.668
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+63 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 729.094 ; gain = 397.023
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lrzbl/Desktop/fpga2.odev/TAB/TAB.runs/synth_1/TAB_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 729.094 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 30 14:27:04 2024...

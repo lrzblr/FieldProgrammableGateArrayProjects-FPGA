@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1714476169">
+  <File Type="PWROPT-DRC" Name="TAB_wrapper_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="TAB_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="TAB_wrapper_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="TAB_wrapper_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="TAB_wrapper.tcl"/>
+  <File Type="OPT-HWDEF" Name="TAB_wrapper.hwdef"/>
+  <File Type="RDI-RDI" Name="TAB_wrapper.vdi"/>
+  <File Type="OPT-DCP" Name="TAB_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="TAB_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="TAB_wrapper_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="TAB_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="TAB_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="TAB_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="TAB_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="TAB_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="TAB_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="TAB_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="TAB_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="TAB_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="TAB_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="TAB_wrapper_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="TAB_wrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="TAB_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="TAB_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="TAB_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="TAB_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="TAB_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="TAB_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="TAB_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="TAB_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="TAB_wrapper_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="TAB_wrapper.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="TAB_wrapper_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="TAB_wrapper.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="TAB_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="TAB_wrapper.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="TAB_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="TAB_wrapper.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="TAB_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="TAB_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="TAB_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="TAB_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="TAB_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="TAB_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="TAB_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="TAB_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="TAB_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="TAB_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TAB_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="TAB_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="TAB_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TAB_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="TAB_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="TAB_wrapper.bit"/>
+  <File Type="BITSTR-RBT" Name="TAB_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="TAB_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="TAB_wrapper_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="TAB_wrapper.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="TAB_wrapper.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/TAB/TAB.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/TAB/hdl/TAB_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="TAB_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../FPGA5HAFTA/Chu Codes/constraint/Nexys4_DDR_chu.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="TAB_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TAB_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TAB_ilmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TAB_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TAB_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TAB_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TAB_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TAB_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TAB_auto_pc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="TAB_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TAB_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TAB_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TAB_clk_wiz_1_0"/>
+</GenRun>
